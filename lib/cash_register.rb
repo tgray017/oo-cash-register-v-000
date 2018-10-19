@@ -16,13 +16,13 @@ class CashRegister
     if @discount == 0
       "There is no discount to apply."
     else 
-      @total = @total*(100-@discount)/100
+      @total *= (100-@discount)/100
       "After the discount, the total comes to $#{@total}."
     end
   end
   
   def void_last_transaction
-    @total = self.add_item(price)
+    @total -= self.add_item(price)
   end
   
 end
