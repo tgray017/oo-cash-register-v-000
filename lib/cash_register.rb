@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :discount, :total
+  attr_accessor :discount, :total, :items
   
   @@items = []
   
@@ -23,6 +23,6 @@ class CashRegister
   end
   
   def items
-    @@items
+    
   end
 end
